@@ -48,9 +48,9 @@ namespace Zadatak_1
             int numUsers2;
             Console.WriteLine("***WELCOME TO THE BANK***\n");
             Console.WriteLine("Enter the number of users of the first ATM:");
-            bool e = int.TryParse(Console.ReadLine(), out numUsers1);
+            numUsers1= AuxiliaryClass.ReadInteger();
             Console.WriteLine("Enter the number of users of the second ATM:");
-            bool c = int.TryParse(Console.ReadLine(), out numUsers2);
+            numUsers2= AuxiliaryClass.ReadInteger();
             int user = numUsers1 + numUsers2;
 
             Thread[] thr = new Thread[user];
